@@ -1,0 +1,12 @@
+run test:
+    All Test:
+        `npm test`
+    Specific file test:
+        ps: make sure in same directory, just to make it easier (path)
+        `npm test -- file.test.ts`
+    Specific file test and specific test in that file:
+        `npm test -- -t "name test" file.test.ts` 
+
+generate token secret: 
+    run node terminal:
+        `require("crypto").randomBytes(64).toString("hex")`
